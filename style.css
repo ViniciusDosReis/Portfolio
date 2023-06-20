@@ -47,18 +47,147 @@ div.menu a:hover {
 }
 section.banner {
     background-color: #23263a;
+    height: 100vh;
 }
 div.banner_area {
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 35%;
+}
+div.banner_text {
+    margin-right: 220px;
 }
 .banner_text h1 {
-    color: ;
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-
-
-
+.banner_text p {
+    color: #42465d;
+    text-shadow: 1px 1px 1px #00000015;
+    margin-bottom: 50px;
+}
+.banner_text a {
+    background-color: #ff4a57;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.pointer {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #ff4a57;
+    border-width: 2px;
+    cursor: pointer;
+}
+#active {
+    background-color: #ff4a57;
+}
+.trace {
+    height: 80px;
+    width: 1.5px;
+    background-color: #6c7399;
+    margin-left: 9px;
+}
+section.serviços {
+    background-color: #23263a;
+}
+.serviços_text_title span {
+    color: white;
+}
+.serviços_text_title h1 {
+    color: #ff4a57;
+    font-size: 50px;
+    padding: 20px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
+.serviços_trace {
+    background-color: #ff4a57;
+    width: 100px;
+    height: 4px;
+    margin-bottom: 35px;
+}
+.serviços_div {
+    display: flex;
+    justify-content: space-between;
+}
+.serviços_text_blocks {
+    display: flex;
+    flex-wrap: wrap;
+}
+.serviços_cards {
+    background-color: #2b2d41;
+    height: 164px;
+    width: 220px;
+    padding: 25px;
+    padding-top: 50px;
+    color: white;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+.serviços_cards h3 {
+    font-size: 13px;
+    padding: 20px;
+    padding-left: 0px;
+}
 div.serviços_cards img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+}
+.serviços_cards p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.serviços_pointers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    background-color: #23263a;
+    height: 650px;
+}
+footer h2 {
+    color: #ff4a57;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+footer input {
+    width: 550px;
+    height: 70px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    background-color: #282a41;
+    border: none;
+}
+.footer_area {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    height: 650px;
+    align-items: center;
+}
+.formulario a {
+    background-color: #ff4a57;
+    padding: 20px;
+    text-decoration: none;
+    color: #1c1e31;;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-weight: 700;
+ 
+}
+form {
+    margin-bottom: 25px;
+}
+.criador {
+    background-color: black;
+    color: white;
 }
