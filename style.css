@@ -22,6 +22,7 @@ div.logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
 }
 div.logo img {
     width: 70px;
@@ -41,9 +42,14 @@ div.menu a {
     font-size: 17px;
     color: white;
     text-decoration: none;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #212336;
 }
 div.menu a:hover {
     color: #ff4a57;
+    border-bottom: 5px solid #ff4a57;
 }
 section.banner {
     background-color: #23263a;
@@ -77,6 +83,9 @@ div.banner_text {
     font-size: 13px;
     padding-left: 40px;
     padding-right: 40px;
+}
+.banner_text a:hover {
+    background-color: #fe8991;
 }
 .pointer {
     height: 20px;
@@ -182,7 +191,9 @@ footer input {
     padding-left: 45px;
     padding-right: 45px;
     font-weight: 700;
- 
+}
+.formulario a:hover {
+    background-color: #fe8991;
 }
 form {
     margin-bottom: 25px;
@@ -190,4 +201,49 @@ form {
 .criador {
     background-color: black;
     color: white;
+    text-align: center;
+    padding: 5px;
 }
+.criador a {
+    color: white;
+    text-decoration: none;
+}
+.criador a:hover {
+    color: #ff4a57;
+}
+#ativo {
+    border-bottom: 5px solid #ff4a57;
+}
+
+@media (min-width:450px) and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+    div.logo {
+        padding-left: 20px;
+    }
+    section.banner {
+        height: 60vh;
+    }
+    div.banner_pointers {
+        display: flex;
+        position: absolute;
+        top: 187%;
+        left: 25%;
+    }
+    div.banner_area {
+        top: 25%;
+        flex-direction: column;
+        text-align: center;
+        left: 2%;
+    }
+    .banner_text h1 {
+        font-size: 36px;
+    }
+    .trace {
+        display: none;
+    }
+    .pointer {
+        margin-right: 10px;
+    }
+} 
